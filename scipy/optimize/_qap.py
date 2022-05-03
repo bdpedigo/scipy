@@ -171,7 +171,7 @@ def quadratic_assignment(A, B, method="faq", options=None):
 
     >>> guess = np.array([np.arange(len(A)), res.col_ind]).T
     >>> res = quadratic_assignment(A, B, method="2opt",
-    ...                            options = {'partial_guess': guess})
+    ...                            options = {'partial_match': guess})
     >>> print(res)
      col_ind: array([1, 2, 3, 0])
          fun: 176
